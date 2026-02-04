@@ -1,0 +1,137 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background: #ffffff;
+  text-align: center;
+  overflow: hidden;
+  /* prevent scrollbars */
+  font-family: 'Times New Roman', Times, sans-serif;
+
+  display: flex;
+  /* stack elements vertically */
+  flex-direction: column;
+  /* header, buttons, footer */
+  min-height: 100vh;
+  /* full viewport height */
+}
+
+/* Header */
+header {
+  background-color: #B40800;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+/* Button container */
+.button-container {
+  margin-top: 30px;
+  position: relative;
+  /* buttons absolutely positioned relative to this */
+  height: 200px;
+  width: 100%;
+  flex: 1;
+  /* grow to take available vertical space */
+}
+
+/* Yes button */
+#yes-btn {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 4rem;
+  width: 10rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 5px black;
+  color: #fff;
+  background: #DC362D;
+  cursor: pointer;
+}
+
+#yes-btn:hover {
+  background-color: #C21912;
+}
+
+/* No button */
+#runaway-btn {
+  position: absolute;
+  left: 70%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 4rem;
+  width: 10rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 5px black;
+  color: #fff;
+  background: #DC362D;
+  cursor: pointer;
+}
+
+#runaway-btn:hover {
+  background-color: #C21912;
+}
+
+.overlay-text {
+  position: absolute;
+  /* positions relative to the nearest positioned ancestor or the page */
+  top: 250px;
+  /* distance from top of page */
+  left: 50%;
+  /* center horizontally */
+  transform: translateX(-50%);
+  /* truly center it */
+  background-color: #C21912;
+  /* optional semi-transparent background */
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  /* make sure it sits on top of other content */
+}
+
+overlay-bottomtext {
+  position: absolute;
+  /* positions relative to the nearest positioned ancestor or the page */
+  top: 80px;
+  /* distance from top of page */
+  left: 50%;
+  /* center horizontally */
+  transform: translateX(-50%);
+  /* truly center it */
+  background-color: #C21912;
+  /* optional semi-transparent background */
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+/* Footer */
+footer {
+  background-color: #B40800;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  border-top: 2px solid #000;
+  font-weight: bold;
+}
